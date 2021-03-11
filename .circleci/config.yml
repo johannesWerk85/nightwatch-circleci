@@ -2,3 +2,7 @@ version: 2.1
 
 orbs:
   nightwatch: bizzabo/nightwatch@0.3.0
+
+workflow:
+  nightwatch:
+    job: nightwatch/build
