@@ -3,6 +3,9 @@ version: 2.1
 orbs:
   nightwatch: bizzabo/nightwatch@0.3.0
 
-workflow:
-  nightwatch:
-    job: nightwatch/build
+workflows:
+  test_my_app:
+    jobs:
+      - nightwatch/run_automation:
+          eks-cluster-name: none
+          nightwatch-repo-url: https://github.com/nightwatchjs/nightwatch
